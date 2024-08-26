@@ -1,134 +1,119 @@
-import { Button, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#fff",
+    height: "100%",
+  },
   headerContainer: {
     backgroundColor: "#7A4A9E",
     width: "100%",
     height: 173,
     justifyContent: "center",
   },
-
-  title: {
-    fontSize: 18,
-    color: "#F2F2F2",
-    textAlign: "center",
-    fontWeight: "bold",
-  },
-
-  mainContainer: {
-    padding: 24,
-    position: "relative",
-  },
-
   inputContainer: {
     flexDirection: "row",
+    position: "relative",
+    top: -27,
   },
-
-  input: {
+  mainContainer: {
     flex: 1,
-    backgroundColor: "#FFF",
-    width: 289,
-    height: 54,
-    padding: 16,
-    alignItems: "center",
-    borderColor: "#808080",
-    borderRadius: 6,
-    marginRight: 4,
-    borderWidth: 0.5,
-    top: -50,
+    backgroundColor: "#F2F2F2",
+    paddingHorizontal: 24,
   },
-
-  inpuText: {
-    color: "#808080",
-    fontSize: 16,
-  },
-
-  textButtom: {
-    color: "#F2F2F2",
-  },
-
-  button: {
-    backgroundColor: "#31C667",
-    padding: 18,
-    justifyContent: "center",
-    alignItems: "center",
-    gap: 8,
-    borderRadius: 6,
-    width: 52,
-    height: 52,
-    top: -50,
-  },
-
-  infoContainer: {
+  statusContainer: {
+    backgroundColor: "#F2F2F2",
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 68,
   },
-
-  produtosContainer: {
-    flexDirection: "row",
+  emptyListContainer: {
+    justifyContent: "center",
     alignItems: "center",
   },
-
-  textProdutos: {
+  productWrapper: {
+    flexDirection: "row",
+  },
+  finishedWrapper: {
+    flexDirection: "row",
+  },
+  input: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: "#F2F2F2",
+    borderWidth: 0.5,
+    borderColor: "#808080",
+    borderRadius: 6,
+    maxWidth: 289,
+    height: 54,
+    marginRight: 4,
+  },
+  button: {
+    width: 52,
+    height: 52,
+    backgroundColor: "#31C667",
+    borderRadius: 6,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  title: {
+    color: "#F2F2F2",
+    textAlign: "center",
+    fontSize: 18,
+    fontWeight: "700",
+    fontStyle: "normal",
+    lineHeight: 25.2,
+  },
+  productCounterText: {
+    fontStyle: "normal",
+    fontWeight: "700",
     fontSize: 14,
     color: "#31C667",
-    fontWeight: "bold",
     marginRight: 8,
   },
-
-  counterProdutos: {
-    backgroundColor: "#D9D9D9",
-    borderRadius: 999,
-    paddingHorizontal: 8,
-    paddingVertical: 2,
-  },
-
-  finalizadosContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-
-  textFinalizados: {
+  finishedCounterText: {
+    fontStyle: "normal",
+    fontWeight: "700",
     fontSize: 14,
     color: "#7A4A9E",
-    fontWeight: "bold",
     marginRight: 8,
   },
-
-  counterFinalizados: {
-    backgroundColor: "#D9D9D9",
-    borderRadius: 999,
+  productCounterNumber: {
     paddingHorizontal: 8,
-    paddingVertical: 2,
+    backgroundColor: "#D9D9D9",
+    borderRadius: 50,
+    fontWeight: "700",
+    fontStyle: "normal",
+    fontSize: 12,
+    alignSelf: "center",
   },
-
-  emptyContainer: {
-    flexDirection: "column",
-    paddingHorizontal: 48,
-    paddingVertical: 20,
+  finishedCounterNumber: {
+    paddingHorizontal: 8,
+    backgroundColor: "#D9D9D9",
+    borderRadius: 50,
+    fontWeight: "700",
+    fontStyle: "normal",
+    fontSize: 12,
+    alignSelf: "center",
+  },
+  boldText: {
+    color: "#808080",
+    fontStyle: "normal",
+    fontSize: 14,
+    fontWeight: "700",
+    marginTop: 16,
+  },
+  normalText: {
+    color: "#808080",
+    fontSize: 14,
+    fontStyle: "normal",
+    fontWeight: "400",
+  },
+  list: {
+    justifyContent: "center",
     borderTopColor: "#D9D9D9",
-  },
-
-  textAviso1: {
-    fontSize: 14,
-    color: "#808080",
-    fontWeight: "bold",
-    width: 345,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
-  textAviso2: {
-    fontSize: 14,
-    color: "#808080",
-    width: 345,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
-  Image: {
-    width: 56,
-    right: 56,
-    justifyContent: "center",
+    borderStyle: "solid",
+    borderTopWidth: 1,
   },
 });
